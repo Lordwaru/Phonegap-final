@@ -15,8 +15,8 @@
 	<div data-role="header">
 		<h1>Productos</h1>	
 
-		        <a href="#agregar" data-icon="plus">Agregar Productos</a>
-		        <a href="#acercade"  data-icon="info" >Acerca de mi</a>		        
+		        <a href="#agregar" data-role="button" data-mini="true" data-iconpos="notext" data-icon="plus">Agregar</a>
+		        <a href="#acercade" data-role="button" data-icon="info" data-iconpos="notext" >Acerca</a>		        
 	</div>
 		   
 				
@@ -33,38 +33,30 @@
 	    <div data-role="collapsible-set">
           <div data-role="collapsible" id="lista_familia">
             <h3>Vapor A</h3>
-            <ul data-role="listview" data-inset="true" data-split-icon="edit" >
-              
+            <ul data-role="listview" data-inset="true" data-split-icon="gear" >
+              <li><a href="#vaporware"><img src="images/vaporware.png"> <h1>Vaporware A</h1></a><a href="#editar"></a></li>
+			  <li><a href="#vaporware"><img src="images/vaporware.png"> <h1>Vaporware A</h1></a><a href="#editar"></a></li>
               
             </ul>
             
           </div>
           <div data-role="collapsible" data-collapsed="true" id="lista_trabajo">
             <h3>Vapor B</h3>
-            <ul data-role="listview" data-inset="true" data-split-icon="edit">
+            <ul data-role="listview" data-inset="true" data-split-icon="gear">
+            	<li><a href="#vaporware"><img src="images/vaporware.png"> <h1>Vaporware B</h1></a><a href="#editar"></a></li>
+			  <li><a href="#vaporware"><img src="images/vaporware.png"> <h1>Vaporware B</h1></a><a href="#editar"></a></li>
             </ul>
           </div>
           <div data-role="collapsible" data-collapsed="true" id="lista_amigo">
             <h3>Vapor C</h3>
-            <ul data-role="listview" data-inset="true" data-split-icon="edit">
+            <ul data-role="listview" data-inset="true" data-split-icon="gear">
+            	<li><a href="#vaporware"><img src="images/vaporware.png"> <h1>Vaporware C</h1></a><a href="#editar"></a></li>
+			  <li><a href="#vaporware"><img src="images/vaporware.png"> <h1>Vaporware C</h1></a><a href="#editar"></a></li>
             </ul>
           </div>
         </div>	
 
-        <div data-role="content">
-	        <ul data-role="listview" data-split-icon="gear">
-			  <li><a href="#vaporware"><img src="images/waifu.png"> <h1>Vaporware A</h1></a><a href="#"></a></li>
-			  <li><a href="#vaporware"><img src="images/waifu.png"> <h1>Vaporware A</h1></a><a href="#"></a></li>
-			  <li><a href="#vaporware"><img src="images/waifu.png"> <h1>Vaporware A</h1></a><a href="#"></a></li>
-			  <li><a href="#vaporware"><img src="images/waifu.png"> <h1>Vaporware A</h1></a><a href="#"></a></li>
-			  <li><a href="#vaporware"><img src="images/waifu.png"> <h1>Vaporware A</h1></a><a href="#"></a></li>
-			  <li><a href="#vaporware"><img src="images/waifu.png"> <h1>Vaporware A</h1></a><a href="#"></a></li>
-			  <li><a href="#vaporware"><img src="images/waifu.png"> <h1>Vaporware A</h1></a><a href="#"></a></li>
-			  <li><a href="#vaporware"><img src="images/waifu.png"> <h1>Vaporware A</h1></a><a href="#"></a></li>
-			  <li><a href="#vaporware"><img src="images/waifu.png"> <h1>Vaporware A</h1></a><a href="#"></a></li>
-			</ul>
-		</div>
-
+       
 
 
 
@@ -72,8 +64,8 @@
 	<div data-role="footer" data-position="fixed" data-id="footerPpal">
     	<div data-role="navbar">
     		<ul>
-    			<li><a href="#acercade" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
-    			<li><a href="##agregar-productos" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    			<li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    			<li><a href="#agregar" data-role="button" data-icon="arrow-r">Siguiente</a></li>
     		</ul>
     	</div>
   	</div>
@@ -120,7 +112,53 @@
     		<ul>
     			<li><a href="#" data-rel="back" data-role="button" data-icon="arrow-l">Atrás</a></li>
     			<li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
-    			<li><a href="#acercade" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    			<li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    			<li><a href="#phonegap" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    		</ul>
+    	</div>
+  	</div>
+</div>
+
+<div data-role="page" id="editar" data-theme="a">
+	<div data-role="header">
+		<h1>Modificar Producto</h1>
+	</div>
+	<div data-role="content">    
+		<div data-role="fieldcontain">
+		  <label for="id">Id:</label><input type="text" name="id" id="id" value="1" />
+		</div>
+		<div data-role="fieldcontain">
+		  <label for="nombre">Nombre del Producto:</label><input type="text" name="nombre" id="nombre" value="vaporware" />
+		</div>
+		<div data-role="fieldcontain">
+		  <label for="imagen">Imagen:</label><input type="text" name="imagen" id="imagen" value="images/vaporware.png" />
+		</div>
+		<div data-role="fieldcontain">
+		  <label for="descripcion">Descripción:</label><input type="text" name="descripcion" id="descripcion" value="Descripcion Vaporware" />
+		</div>
+		<div data-role="fieldcontain">
+		  <label for="precio">Precio:</label><input type="text" name="precio" id="precio" value="$123456" />
+		</div>
+		<div data-role="fieldcontain">
+		  <label for="existencia">Existencia:</label><input type="text" name="existencia" id="existencia" value="111" />
+		</div>
+		<div data-role="fieldcontain">
+		  <label for="categoria">Categoria:</label><input type="text" name="categoria" id="categoria" value="A" />
+		</div>
+		<div data-role="fieldcontain">
+		  <label for="fecha">Fecha de registro:</label><input type="text" name="fecha" id="fecha" value="12/10/1492" />
+		</div>
+		<input type="submit" value="Guardar">
+		<input type="reset" value="Cancelar">
+		<input type="submit" value="Eliminar">
+
+	</div>
+	<div data-role="footer" data-position="fixed" data-id="footerPpal">
+    	<div data-role="navbar">
+    		<ul>
+    			<li><a href="#" data-rel="back" data-role="button" data-icon="arrow-l">Atrás</a></li>
+    			<li><a href="#home" data-role="button" data-icon="home">Inicio</a></li>
+    			<li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
     			<li><a href="#phonegap" data-role="button" data-icon="arrow-r">Siguiente</a></li>
     		</ul>
     	</div>
@@ -128,12 +166,41 @@
 </div>
 
 
+<div data-role="page" id="acercade" data-theme="a">
+	<div data-role="header">
+		<h1>Informacion del Producto</h1>
+	</div>
+	<div data-role="content">
+		<div align="center"><img src="images/waru.jpg" style="padding:25px; width:50%">
+	    </div>
+
+	    <h2>Datos Personales</h2>
+
+	    <ul>
+	    	<li>Daniel Ortiz Sanchez</li>
+	    	<li>Licenciatura en Ingenieria en Sistemas de Informacion</li>
+	    	<li>Desarrollo Aplicaciones E-commerce</li>
+	    	<li>
+	    		Preferencias
+	    		<ul>
+	    			<li>Buceo con Tiburones</li>
+	    			<li>Encantador de Cobras</li>
+	    		</ul>
+	    	</li>
+	    </ul>
+
+	</div>
+
+</div>
+
+
+
 <div data-role="page" id="vaporware" data-theme="a">
 	<div data-role="header">
 		<h1>Informacion del Producto</h1>
 	</div>
 	<div data-role="content">
-		<div align="center"><img src="images/waifu.png" style="padding:25px; width:50%">
+		<div align="center"><img src="images/vaporware.png" style="padding:25px; width:50%">
 	    </div>
 
 	    <h2>Vaporware</h2>
@@ -149,13 +216,13 @@
 </div>
 
 
-<div data-role="dialog" id="acercade" data-theme="a">
+<div data-role="dialog" id="info" data-theme="a">
 	<div data-role="header">
    		<h1>Infowinfo</h1>
 	</div>
   	<div data-role="content">
-  		<p align="center">Creado por Waru "Matusalén" Ortiz en Sublime Text 3 con jquery mobile</p>
-  		<p align="center">Mayo de 1356 Anno Mundi</p>
+  		<p align="center">Aplicación desarrollada mediante PhoneGap para Proyecto Final</p>
+  		<p align="center">Por Daniel Ortiz - Mayo de 2016</p>
     	<div data-role="controlgroup" data-type="horizontal" align="center">
     		<a href="#" data-rel="back" data-role="button">Cerrar</a>
     	</div>

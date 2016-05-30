@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
-    id        = "com.phonegap.pg2016"
+    id        = "com.phonegap.dos"
     version   = "1.0.0">
 
-<name>PhounGap-Final-Waru</name>
+<name>Catalogo-Ortiz-Sanchez</name>
 
 <description>
 Final Desarrollo E-comerce
@@ -14,9 +14,9 @@ Final Desarrollo E-comerce
 Daniel Ortiz
 </author>
 
-<icon src="images/waifu.png" gap:density="ldpi" gap:platform="android" />
-<icon src="images/waifu.png" gap:density="mdpi" gap:platform="android" />
-<icon src="images/waifu.png" gap:density="hdpi" gap:platform="android" />
-<icon src="images/waifu.png" gap:density="xhdpi" gap:platform="android" />
+<icon src="images/vaporware.png" gap:density="ldpi" gap:platform="android" />
+<icon src="images/vaporware.png" gap:density="mdpi" gap:platform="android" />
+<icon src="images/vaporware.png" gap:density="hdpi" gap:platform="android" />
+<icon src="images/vaporware.png" gap:density="xhdpi" gap:platform="android" />
 
 </widget>
