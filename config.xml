@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.phonegap.pg2016"
+    version   = "1.0.0">
+
+<name>PhounGap-3-Waru</name>
+
+<description>
+Historia Jquery mobile
+</description>
+
+<author href="https://example.com" email="you@example.com">
+Daniel Ortiz
+</author>
+
+<icon src="images/waifu.png" gap:density="ldpi" gap:platform="android" />
+<icon src="images/waifu.png" gap:density="mdpi" gap:platform="android" />
+<icon src="images/waifu.png" gap:density="hdpi" gap:platform="android" />
+<icon src="images/waifu.png" gap:density="xhdpi" gap:platform="android" />
+
+</widget>
